@@ -5,14 +5,8 @@ import json
 import os
 import sys
 import traceback
+import requests
 from dotenv import load_dotenv
-
-global_import_error = None
-try:
-    from google import genai
-except Exception as e:
-    genai = None
-    global_import_error = f"Global Import Error: {str(e)}\n{traceback.format_exc()}"
 
 load_dotenv()
 
@@ -27,16 +21,6 @@ app.add_middleware(
 )
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-
-try:
-    if GEMINI_API_KEY and GEMINI_API_KEY != "YOUR_GEMINI_API_KEY_HERE":
-        client = genai.Client(api_key=GEMINI_API_KEY)
-    else:
-        client = None
-        print("WARNING: Valid GEMINI_API_KEY not found in .env")
-except Exception as e:
-    client = None
-    print(f"Error initializing client: {e}")
 
 # Load the JSON kb resiliently (handling Vercel's relative paths)
 base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -74,25 +58,38 @@ class ChatRequest(BaseModel):
 
 @app.post("/api/chat")
 def chat_with_bot(req: ChatRequest):
-    if global_import_error:
-        return {"error": global_import_error}
-    if not client:
+    if not GEMINI_API_KEY or GEMINI_API_KEY == "YOUR_GEMINI_API_KEY_HERE":
         return {"error": "API Key not configured properly. The administrator needs to set GEMINI_API_KEY."}
-    try:
-        chat = client.chats.create(
-            model='gemini-2.5-flash',
-            config={
-                'system_instruction': prompt,
-                'temperature': 0.7
+    
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={GEMINI_API_KEY}"
+    headers = {"Content-Type": "application/json"}
+    payload = {
+        "systemInstruction": {
+            "parts": [{"text": prompt}]
+        },
+        "contents": [
+            {
+                "role": "user",
+                "parts": [{"text": req.message}]
             }
-        )
-        response = chat.send_message(req.message)
-        return {"response": response.text}
+        ],
+        "generationConfig": {
+            "temperature": 0.7
+        }
+    }
+    
+    try:
+        response = requests.post(url, headers=headers, json=payload)
+        response_data = response.json()
+        
+        if "error" in response_data:
+            return {"error": f"Google API Error: {response_data['error'].get('message', 'Unknown error')}"}
+            
+        text = response_data['candidates'][0]['content']['parts'][0]['text']
+        return {"response": text}
     except Exception as e:
         return {"error": repr(e)}
 
 @app.get("/")
 def read_root():
-    if global_import_error:
-        return {"message": "FastAPI started, but imports failed. Check the error detail.", "error": global_import_error}
     return {"message": "FastAPI is running! However, Vercel is routing all traffic here instead of your index.html."}
