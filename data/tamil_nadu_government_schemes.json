@@ -1,0 +1,1058 @@
+{
+  "metadata": {
+    "title": "Tamil Nadu Government Schemes Dataset",
+    "description": "A comprehensive dataset of government schemes launched and active in Tamil Nadu, covering social welfare, education, health, agriculture, women empowerment, housing, and more.",
+    "state": "Tamil Nadu",
+    "country": "India",
+    "data_as_of": "April 2026",
+    "source_references": [
+      "Tamil Nadu Government Portal (tn.gov.in)",
+      "TNPSC Thervupettagam – Recent TN Government Schemes",
+      "Sarkari Yojana Tamil Nadu (sarkariyojana.com)",
+      "Women Helpline 181 (whl.tnsw.in)",
+      "PRS India – Tamil Nadu Budget Analysis 2024-25",
+      "Tamildot.com – Social Welfare Schemes TN"
+    ],
+    "total_schemes": 50,
+    "categories": [
+      "Women Empowerment",
+      "Education",
+      "Health",
+      "Agriculture",
+      "Social Welfare",
+      "Housing",
+      "Environment",
+      "Youth & Employment",
+      "Tribal Welfare",
+      "Child Welfare",
+      "Ex-Servicemen"
+    ]
+  },
+  "schemes": [
+    {
+      "id": "TN-001",
+      "name": "Kalaignar Magalir Urimai Thittam (Women's Rights Grant Scheme)",
+      "local_name": "கலைஞர் மகளிர் உரிமைத் திட்டம்",
+      "category": "Women Empowerment",
+      "launched_date": "2023-09-15",
+      "implementing_department": "Social Welfare & Women Empowerment Department, Government of Tamil Nadu",
+      "objective": "Provide direct monthly financial assistance of ₹1,000 to women heads of households to improve livelihoods, promote gender equality, and ensure economic independence.",
+      "beneficiaries": "Women recognized as heads of households on family ration cards; widows, unmarried single women, and trans women running households.",
+      "eligibility": [
+        "Age: Must have completed 21 years (born before Sept 15, 2002)",
+        "Annual household income less than ₹2.5 lakhs",
+        "Own less than 5 acres of wetland or 10 acres of dryland",
+        "Domestic electricity consumption less than 3,600 units per year"
+      ],
+      "benefits": {
+        "monthly_amount_inr": 1000,
+        "annual_amount_inr": 12000,
+        "mode": "Direct Benefit Transfer (DBT) to bank account"
+      },
+      "coverage": "10.6 million eligible women across Tamil Nadu",
+      "status": "Active",
+      "notes": "Launched on the birthday of C.N. Annadurai; no separate income certificate required."
+    },
+    {
+      "id": "TN-002",
+      "name": "Pudhumai Penn Thittam (Moovalur Ramamirtham Ammaiyar Higher Education Assurance Scheme)",
+      "local_name": "புதுமை பெண் திட்டம்",
+      "category": "Education",
+      "launched_date": "2022-09-15",
+      "implementing_department": "School Education Department, Government of Tamil Nadu",
+      "objective": "Encourage girl students to continue higher education by providing monthly financial assistance.",
+      "beneficiaries": "Girl students studying in government schools from Classes 6 to 12.",
+      "eligibility": [
+        "Must be enrolled in a government school (Class 6–12)",
+        "Must have studied from Class 1 in a government school"
+      ],
+      "benefits": {
+        "monthly_amount_inr": 1000,
+        "mode": "DBT to student or guardian's bank account"
+      },
+      "coverage": "All eligible girl students in Tamil Nadu government schools",
+      "status": "Active",
+      "notes": "One of the largest education support schemes for girls in Tamil Nadu."
+    },
+    {
+      "id": "TN-003",
+      "name": "Chief Minister's Breakfast Scheme",
+      "local_name": "முதலமைச்சரின் காலை உணவுத் திட்டம்",
+      "category": "Education",
+      "launched_date": "2022-09-15",
+      "implementing_department": "Social Welfare & Women Empowerment Department",
+      "objective": "Provide free nutritious breakfast to primary school students to improve attendance and reduce malnutrition.",
+      "beneficiaries": "Students of Classes 1 to 5 in government primary schools across Tamil Nadu.",
+      "eligibility": [
+        "Enrolled in Classes 1–5 in any government school in Tamil Nadu"
+      ],
+      "benefits": {
+        "type": "Free nutritious breakfast on all school days",
+        "mode": "In-kind at school"
+      },
+      "coverage": "Government primary schools statewide",
+      "status": "Active",
+      "notes": "Inaugurated at Madurai on September 15, 2022."
+    },
+    {
+      "id": "TN-004",
+      "name": "Naan Mudhalvan Scheme",
+      "local_name": "நான் முதல்வன் திட்டம்",
+      "category": "Youth & Employment",
+      "launched_date": "2022-03-01",
+      "implementing_department": "Tamil Nadu Skill Development Corporation (TNSDC)",
+      "objective": "Transform students and youth into industry-ready professionals by providing skill training, career counselling, and competitive exam preparation.",
+      "beneficiaries": "School and college students, and youth of Tamil Nadu.",
+      "eligibility": [
+        "Students in government and government-aided schools, colleges, and universities",
+        "Age 18–29 for competitive exam training",
+        "Bachelor's degree for SSC/IBPS/Railways training track"
+      ],
+      "benefits": {
+        "type": "Free skill training, career guidance, competitive exam coaching",
+        "special_provision": "6-month residential training with food and accommodation for 1,000 selected students (2024-25 budget)"
+      },
+      "coverage": "Statewide",
+      "status": "Active",
+      "notes": "Includes SIRPI initiative for police-public collaboration and youth leadership."
+    },
+    {
+      "id": "TN-005",
+      "name": "Vetri Nichayam Scheme",
+      "local_name": "வெற்றி நிச்சயம் திட்டம்",
+      "category": "Youth & Employment",
+      "launched_date": "2025-01-01",
+      "implementing_department": "Tamil Nadu Skill Development Corporation (TNSDC)",
+      "objective": "Provide free industry-relevant skill training to youth to enhance employability.",
+      "beneficiaries": "Youth aged 18–35 years across Tamil Nadu.",
+      "eligibility": [
+        "Age between 18 and 35 years",
+        "Resident of Tamil Nadu"
+      ],
+      "benefits": {
+        "type": "Free skill training in various domains including IT, manufacturing, services, and trades",
+        "mode": "In-person and online training"
+      },
+      "coverage": "Statewide",
+      "status": "Active"
+    },
+    {
+      "id": "TN-006",
+      "name": "Green Tamil Nadu Mission",
+      "local_name": "பசுமை தமிழ்நாடு இயக்கம்",
+      "category": "Environment",
+      "launched_date": "2022-11-28",
+      "implementing_department": "Environment, Climate Change and Forest Department, Government of Tamil Nadu",
+      "objective": "Increase forest and tree cover of Tamil Nadu to 33% of the state's land area through large-scale tree-planting and ecological restoration.",
+      "beneficiaries": "All citizens of Tamil Nadu; special benefits for tribals, farmers, and rural communities.",
+      "eligibility": [
+        "Open to all government departments, NGOs, private organizations, educational institutions, and communities"
+      ],
+      "benefits": {
+        "type": "Ecological restoration, biodiversity enhancement, economic income from high-value trees",
+        "target_saplings_phase1": "28 million saplings",
+        "technology": "Geo-tagging and digital monitoring via greentnmission.com"
+      },
+      "coverage": "Statewide",
+      "status": "Active",
+      "notes": "Inaugurated at Vandalur, Chengalpattu; partnerships with Hyundai India Motors and others."
+    },
+    {
+      "id": "TN-007",
+      "name": "Chief Minister's Thayumanuvar Scheme",
+      "local_name": "தாயுமானவர் திட்டம்",
+      "category": "Social Welfare",
+      "launched_date": "2024-02-19",
+      "implementing_department": "Department of Rural Development and Panchayat Raj",
+      "objective": "Uplift approximately 5 lakh extremely poor families from poverty within 2 years by integrating all forms of government assistance.",
+      "beneficiaries": "Destitute persons, elderly living alone, single-parent families, orphaned children, mentally handicapped individuals, and those in financial distress.",
+      "eligibility": [
+        "Identified as extremely poor per NITI Aayog criteria (approx. 2.2% of state population)",
+        "Permanent resident of Tamil Nadu",
+        "Must belong to destitute, elderly alone, single-parent, or disabled category"
+      ],
+      "benefits": {
+        "total_allocation_crore_inr": 27922,
+        "type": "Comprehensive bundled support – financial aid, social welfare, skill development, and basic amenities"
+      },
+      "coverage": "5 lakh families statewide",
+      "status": "Active"
+    },
+    {
+      "id": "TN-008",
+      "name": "Mission Nature Scheme",
+      "local_name": "மிஷன் நேச்சர் திட்டம்",
+      "category": "Education / Environment",
+      "launched_date": "2022-11-28",
+      "implementing_department": "Tamil Nadu School Education Department (in collaboration with WWF India)",
+      "objective": "Improve environmental awareness among students through practical projects in schools, homes, and communities.",
+      "beneficiaries": "Students from 6,029 government schools with advanced technology laboratories.",
+      "eligibility": [
+        "Government schools equipped with advanced technology laboratories",
+        "Each school selects 5 participating students"
+      ],
+      "benefits": {
+        "type": "Environmental education, hands-on projects, awards for best schools and students",
+        "awards": "Top 5 schools and 25 students recognized and rewarded"
+      },
+      "coverage": "6,029 government schools",
+      "status": "Active"
+    },
+    {
+      "id": "TN-009",
+      "name": "Tamizh Pudhalvan Scheme",
+      "local_name": "தமிழ் புதல்வன் திட்டம்",
+      "category": "Education",
+      "launched_date": "2024-02-19",
+      "implementing_department": "School Education Department, Government of Tamil Nadu",
+      "objective": "Provide financial assistance to boys from government schools for purchasing learning materials during higher education.",
+      "beneficiaries": "Male students who have studied in government schools from Class 6 to Class 12.",
+      "eligibility": [
+        "Must have studied in government schools from Class 6 to 12",
+        "Must be pursuing higher education"
+      ],
+      "benefits": {
+        "monthly_amount_inr": 1000,
+        "purpose": "Purchase of learning materials for higher education"
+      },
+      "coverage": "Approximately 3 lakh students; allocation of ₹360 crore in 2024-25",
+      "status": "Active",
+      "notes": "Announced in Tamil Nadu Budget 2024-25."
+    },
+    {
+      "id": "TN-010",
+      "name": "Chief Minister's Comprehensive Health Insurance Scheme (CMCHIS)",
+      "local_name": "முதலமைச்சரின் விரிவான மருத்துவக் காப்பீட்டுத் திட்டம்",
+      "category": "Health",
+      "launched_date": "2012-07-23",
+      "implementing_department": "Health and Family Welfare Department, Government of Tamil Nadu",
+      "objective": "Provide free medical treatment to economically weaker sections covering major surgeries and hospital expenses.",
+      "beneficiaries": "Families with annual income below ₹72,000 holding valid ration cards.",
+      "eligibility": [
+        "Annual income below ₹72,000",
+        "Must hold a valid government ration card"
+      ],
+      "benefits": {
+        "coverage_amount_inr": 500000,
+        "type": "Cashless treatment at empanelled government and private hospitals",
+        "procedures_covered": "Over 1,400 procedures including heart surgery, cancer treatment, organ transplants"
+      },
+      "coverage": "1.56 crore families",
+      "status": "Active",
+      "notes": "One of the largest health insurance schemes in India."
+    },
+    {
+      "id": "TN-011",
+      "name": "Nalam Kakkum Stalin Scheme",
+      "local_name": "நலம் காக்கும் ஸ்டாலின் திட்டம்",
+      "category": "Health",
+      "launched_date": "2023-01-01",
+      "implementing_department": "Health and Family Welfare Department",
+      "objective": "Ensure quality healthcare reaches every corner of Tamil Nadu through large-scale health camps and mobile healthcare units.",
+      "beneficiaries": "All citizens of Tamil Nadu, with focus on rural and remote areas.",
+      "eligibility": [
+        "Open to all residents of Tamil Nadu"
+      ],
+      "benefits": {
+        "type": "Free health screening, diagnosis, medicines, and referrals through mobile and camp-based healthcare"
+      },
+      "coverage": "Statewide, targeting rural and underserved communities",
+      "status": "Active"
+    },
+    {
+      "id": "TN-012",
+      "name": "108 Emergency Response Management Service",
+      "local_name": "108 அவசர மருத்துவ சேவை",
+      "category": "Health",
+      "launched_date": "2008-01-01",
+      "implementing_department": "Health and Family Welfare Department (via EMRI Hyderabad MoU)",
+      "objective": "Provide integrated emergency response services (medical, police, and fire) through a single toll-free number.",
+      "beneficiaries": "All citizens of Tamil Nadu.",
+      "eligibility": [
+        "Open to all residents and visitors in Tamil Nadu"
+      ],
+      "benefits": {
+        "type": "Free ambulance services, emergency medical care, coordination with police and fire services",
+        "helpline": "108"
+      },
+      "coverage": "Statewide",
+      "status": "Active"
+    },
+    {
+      "id": "TN-013",
+      "name": "Kalaignarin Kanavu Illam (Housing Scheme)",
+      "local_name": "கலைஞரின் கனவு இல்லம்",
+      "category": "Housing",
+      "launched_date": "2024-02-19",
+      "implementing_department": "Tamil Nadu Housing Board / Rural Development Department",
+      "objective": "Construct 8 lakh concrete houses in rural areas by 2030; provide funds to selected beneficiaries for house construction.",
+      "beneficiaries": "Below poverty line families in rural Tamil Nadu without permanent housing.",
+      "eligibility": [
+        "BPL family in rural Tamil Nadu",
+        "No existing permanent house",
+        "Selected beneficiary under the scheme"
+      ],
+      "benefits": {
+        "unit_cost_inr": 350000,
+        "phase1_target": "1 lakh houses in 2024-25"
+      },
+      "coverage": "8 lakh houses by 2030",
+      "status": "Active",
+      "notes": "Announced in Budget 2024-25."
+    },
+    {
+      "id": "TN-014",
+      "name": "Pudhumai Penn Higher Education Scheme",
+      "local_name": "புதுமை பெண் உயர்கல்வி திட்டம்",
+      "category": "Education",
+      "launched_date": "2022-09-15",
+      "implementing_department": "Higher Education Department, Government of Tamil Nadu",
+      "objective": "Encourage girls who have completed Class 12 in government schools to pursue higher education by providing monthly stipend.",
+      "beneficiaries": "Girl students pursuing higher education (college) after completing government school education.",
+      "eligibility": [
+        "Should have completed Classes 1–12 in government schools",
+        "Currently enrolled in a college/university",
+        "Tamil Nadu resident"
+      ],
+      "benefits": {
+        "monthly_stipend_inr": 1000,
+        "mode": "DBT"
+      },
+      "coverage": "Statewide",
+      "status": "Active"
+    },
+    {
+      "id": "TN-015",
+      "name": "Old Age Pension Scheme (Indira Gandhi National Old Age Pension Scheme – TN component)",
+      "local_name": "முதியோர் ஓய்வூதிய திட்டம்",
+      "category": "Social Welfare",
+      "launched_date": "1995-01-01",
+      "implementing_department": "Social Welfare and Nutritious Meal Programme Department",
+      "objective": "Provide monthly financial assistance to senior citizens living below the poverty line.",
+      "beneficiaries": "Senior citizens aged 60 and above belonging to BPL families.",
+      "eligibility": [
+        "Age 60 years and above",
+        "BPL card holder or annual income below threshold",
+        "Permanent resident of Tamil Nadu"
+      ],
+      "benefits": {
+        "monthly_pension_inr": 1000,
+        "mode": "DBT"
+      },
+      "coverage": "Statewide",
+      "status": "Active"
+    },
+    {
+      "id": "TN-016",
+      "name": "Widow Pension Scheme",
+      "local_name": "விதவை ஓய்வூதிய திட்டம்",
+      "category": "Social Welfare",
+      "launched_date": "1985-01-01",
+      "implementing_department": "Social Welfare and Nutritious Meal Programme Department",
+      "objective": "Provide monthly financial support to widows without adequate income for their livelihood.",
+      "beneficiaries": "Widows residing in Tamil Nadu without sufficient income.",
+      "eligibility": [
+        "Widow status",
+        "Annual income below prescribed limit",
+        "Permanent resident of Tamil Nadu"
+      ],
+      "benefits": {
+        "monthly_pension_inr": 1000,
+        "mode": "DBT"
+      },
+      "coverage": "Statewide",
+      "status": "Active"
+    },
+    {
+      "id": "TN-017",
+      "name": "Differently-Abled Pension Scheme",
+      "local_name": "மாற்றுத்திறனாளி ஓய்வூதிய திட்டம்",
+      "category": "Social Welfare",
+      "launched_date": "1990-01-01",
+      "implementing_department": "Social Welfare and Nutritious Meal Programme Department",
+      "objective": "Provide monthly pension to persons with disabilities for their basic financial security.",
+      "beneficiaries": "Persons with 40% or more disability in Tamil Nadu.",
+      "eligibility": [
+        "Minimum 40% disability certified by government medical board",
+        "Annual income below prescribed limit",
+        "Tamil Nadu resident"
+      ],
+      "benefits": {
+        "monthly_pension_inr": 1000,
+        "mode": "DBT"
+      },
+      "coverage": "Statewide",
+      "status": "Active"
+    },
+    {
+      "id": "TN-018",
+      "name": "Dr. Muthulakshmi Reddy Maternity Benefit Scheme",
+      "local_name": "டாக்டர் முத்துலட்சுமி ரெட்டி மகப்பேறு உதவி திட்டம்",
+      "category": "Health / Women Empowerment",
+      "launched_date": "1987-01-01",
+      "implementing_department": "Health and Family Welfare Department",
+      "objective": "Provide financial assistance to pregnant women to ensure better nutrition and maternal healthcare.",
+      "beneficiaries": "Pregnant women belonging to BPL or low-income families in Tamil Nadu.",
+      "eligibility": [
+        "Registered at government health centre or hospital",
+        "BPL or low-income family",
+        "Tamil Nadu resident"
+      ],
+      "benefits": {
+        "total_amount_inr": 18000,
+        "installments": "Paid in installments during pregnancy and post-delivery",
+        "mode": "DBT"
+      },
+      "coverage": "Statewide",
+      "status": "Active"
+    },
+    {
+      "id": "TN-019",
+      "name": "Cradle Baby Scheme",
+      "local_name": "தொட்டில் குழந்தை திட்டம்",
+      "category": "Child Welfare",
+      "launched_date": "1992-01-01",
+      "implementing_department": "Health and Family Welfare Department / Social Welfare Department",
+      "objective": "Prevent female infanticide by allowing parents to safely surrender unwanted girl children at designated cradle centres.",
+      "beneficiaries": "Unwanted/abandoned girl children; families in distress.",
+      "eligibility": [
+        "Open to any family wishing to surrender a girl child",
+        "No questions asked policy"
+      ],
+      "benefits": {
+        "type": "Safe shelter, adoption facilitation, free care for surrendered girl children"
+      },
+      "coverage": "Government hospitals statewide",
+      "status": "Active"
+    },
+    {
+      "id": "TN-020",
+      "name": "Girl Child Protection Scheme (Annakkal Scheme)",
+      "local_name": "பெண் குழந்தை பாதுகாப்பு திட்டம்",
+      "category": "Child Welfare",
+      "launched_date": "2011-08-01",
+      "implementing_department": "Social Welfare and Women Empowerment Department",
+      "objective": "Encourage families to value the girl child by providing a fixed deposit to ensure financial security upon adulthood.",
+      "beneficiaries": "Girl children born on or after August 1, 2011 in Tamil Nadu.",
+      "eligibility": [
+        "Girl child born on or after 01/08/2011",
+        "Family with one girl child: ₹50,000 FD",
+        "Family with two girl children: ₹25,000 each",
+        "Parent must have undergone sterilization",
+        "Application before child turns 3 years old",
+        "Parents/grandparents domiciled in Tamil Nadu for 10 years"
+      ],
+      "benefits": {
+        "single_girl_child_fd_inr": 50000,
+        "two_girl_children_fd_each_inr": 25000,
+        "tenure_years": 18,
+        "deposited_with": "Tamil Nadu Power Finance and Infrastructure Development Corporation Limited"
+      },
+      "coverage": "Statewide; extended to Sri Lankan Tamil refugees in camps",
+      "status": "Active"
+    },
+    {
+      "id": "TN-021",
+      "name": "Moovalur Ramamirtham Ammaiyar Ninaivu Marriage Assistance Scheme",
+      "local_name": "மூவலூர் ராமாமிர்தம் அம்மையார் நினைவு திருமண உதவி திட்டம்",
+      "category": "Women Empowerment",
+      "launched_date": "1974-01-01",
+      "implementing_department": "Social Welfare and Women Empowerment Department",
+      "objective": "Provide financial assistance for the purchase of marriage ornaments (Thaali/mangalsutra) to prevent dowry harassment and child marriages.",
+      "beneficiaries": "Brides from economically weaker families in Tamil Nadu.",
+      "eligibility": [
+        "Bride must have completed 18 years of age",
+        "Must be from BPL or low-income family",
+        "Application must be submitted before the marriage date",
+        "Must hold diploma or higher qualification (for enhanced benefit)"
+      ],
+      "benefits": {
+        "assistance_amount_inr": 8000,
+        "type": "One-time grant for gold thaali purchase"
+      },
+      "coverage": "Statewide",
+      "status": "Active"
+    },
+    {
+      "id": "TN-022",
+      "name": "Dr. Dharmambal Ammaiyar Ninaivu Widow Remarriage Assistance Scheme",
+      "local_name": "டாக்டர் தர்மாம்பாள் அம்மையார் நினைவு விதவை மறுமணம் உதவி திட்டம்",
+      "category": "Women Empowerment",
+      "launched_date": "1975-01-01",
+      "implementing_department": "Social Welfare and Women Empowerment Department",
+      "objective": "Encourage widow remarriage and provide financial support for rehabilitation.",
+      "beneficiaries": "Widows in Tamil Nadu who wish to remarry.",
+      "eligibility": [
+        "Widow residing in Tamil Nadu",
+        "Intending to remarry",
+        "Application before or on marriage date"
+      ],
+      "benefits": {
+        "assistance_amount_inr": 50000,
+        "type": "One-time grant"
+      },
+      "coverage": "Statewide",
+      "status": "Active"
+    },
+    {
+      "id": "TN-023",
+      "name": "Tholkudi Tribal Development Scheme",
+      "local_name": "தொல்குடி பழங்குடி மேம்பாட்டு திட்டம்",
+      "category": "Tribal Welfare",
+      "launched_date": "2024-03-06",
+      "implementing_department": "Adi Dravidar and Tribal Welfare Department",
+      "objective": "Develop tribal communities by establishing basic infrastructure and providing educational and training opportunities.",
+      "beneficiaries": "Tribal students and communities in Tamil Nadu.",
+      "eligibility": [
+        "Tribal communities and students in designated tribal areas",
+        "Students seeking higher education in engineering, medicine, and other fields",
+        "Students seeking study-abroad opportunities"
+      ],
+      "benefits": {
+        "type": "Infrastructure development, educational support, special classes, study-abroad opportunities"
+      },
+      "coverage": "Tribal regions across Tamil Nadu",
+      "status": "Active",
+      "notes": "Inauguration ceremony held at Namakkal in March 2024."
+    },
+    {
+      "id": "TN-024",
+      "name": "Free Bus Travel for Women Scheme (Hills Areas)",
+      "local_name": "மலைப் பகுதி மகளிர் இலவச பேருந்து பயண திட்டம்",
+      "category": "Women Empowerment",
+      "launched_date": "2023-06-01",
+      "implementing_department": "Transport Department, Government of Tamil Nadu",
+      "objective": "Enhance mobility and empowerment of women in hilly areas by providing free bus travel.",
+      "beneficiaries": "Women, including college students, in Nilgiris, Kodaikanal, Valparai, Yercaud, and Karumandurai hilly areas.",
+      "eligibility": [
+        "Women residents of specified hilly areas",
+        "Covers 65 villages in Yercaud Hills and 98 villages in Karumandurai Hills"
+      ],
+      "benefits": {
+        "type": "Free bus travel on government buses within specified hilly areas"
+      },
+      "coverage": "Nilgiris, Kodaikanal, Valparai, Yercaud, Karumandurai",
+      "status": "Active"
+    },
+    {
+      "id": "TN-025",
+      "name": "Imaigal Scheme (Girl Child Protection – Police)",
+      "local_name": "இமைகள் திட்டம்",
+      "category": "Child Welfare / Women Empowerment",
+      "launched_date": "2023-01-01",
+      "implementing_department": "Tamil Nadu Police – Northern Zone (under IG Kannan)",
+      "objective": "Protect girl children from sexual crimes through a dedicated operational framework within the Tamil Nadu Police.",
+      "beneficiaries": "Girl children in Chennai, Kanchipuram, Chengalpattu, and Vellore districts.",
+      "eligibility": [
+        "All girl children in the Northern Zone police jurisdiction"
+      ],
+      "benefits": {
+        "type": "Legal support, case registration, charge sheet within 60 days, victim compensation and rehabilitation",
+        "collaboration": "Engages multiple government departments for coordinated response"
+      },
+      "coverage": "Northern Zone police districts",
+      "status": "Active"
+    },
+    {
+      "id": "TN-026",
+      "name": "Neengal Nalama Scheme (Citizens' Feedback on Welfare Schemes)",
+      "local_name": "நீங்கள் நலமா திட்டம்",
+      "category": "Social Welfare / Governance",
+      "launched_date": "2024-03-01",
+      "implementing_department": "Chief Minister's Office, Government of Tamil Nadu",
+      "objective": "Bridge the gap between government and public by gathering direct feedback on welfare schemes to improve delivery and reach.",
+      "beneficiaries": "All citizens of Tamil Nadu who are beneficiaries of welfare schemes.",
+      "eligibility": [
+        "Any resident of Tamil Nadu who is a beneficiary of state welfare schemes"
+      ],
+      "benefits": {
+        "type": "Improved public service delivery; feedback mechanism to enhance scheme effectiveness"
+      },
+      "coverage": "Statewide",
+      "status": "Active"
+    },
+    {
+      "id": "TN-027",
+      "name": "You Are Your Own King Scheme (Nee Nee Rajave / Traditional Arts Revival)",
+      "local_name": "நீ நீ ராஜாவே திட்டம்",
+      "category": "Youth & Employment",
+      "launched_date": "2023-12-01",
+      "implementing_department": "Tamil Nadu Skill Development Corporation",
+      "objective": "Empower youth by revitalizing traditional arts, promoting skill development, and facilitating employment opportunities.",
+      "beneficiaries": "Youth interested in traditional arts and crafts across Tamil Nadu.",
+      "eligibility": [
+        "Youth passionate about traditional Tamil arts and crafts",
+        "Open to all regions of Tamil Nadu"
+      ],
+      "benefits": {
+        "type": "Specialized skill training in woodwork, Thanjavur dolls/painting, palm leaf art, sea shell art, clay art, pottery, handloom dyeing, Pathamadai mat making, etc.",
+        "objective_secondary": "Entrepreneurship promotion in traditional crafts"
+      },
+      "coverage": "Statewide",
+      "status": "Active",
+      "notes": "Implemented under leadership of Minister Udhayanidhi Stalin."
+    },
+    {
+      "id": "TN-028",
+      "name": "SIRPI Initiative (Student-Police Partnership)",
+      "local_name": "சிர்பி திட்டம்",
+      "category": "Youth & Employment / Social Welfare",
+      "launched_date": "2022-03-01",
+      "implementing_department": "Tamil Nadu Police Department",
+      "objective": "Create responsible students who will contribute to a better society by bridging the gap between police and public.",
+      "beneficiaries": "School and college students across Tamil Nadu.",
+      "eligibility": [
+        "Students in government and government-aided schools and colleges"
+      ],
+      "benefits": {
+        "type": "Leadership training, mentoring by police officers, anti-crime awareness, skills guidance"
+      },
+      "coverage": "Statewide",
+      "status": "Active"
+    },
+    {
+      "id": "TN-029",
+      "name": "Thagaisal Schools / Model Schools Initiative",
+      "local_name": "தகைசால் பள்ளிகள் திட்டம்",
+      "category": "Education",
+      "launched_date": "2023-01-01",
+      "implementing_department": "School Education Department, Government of Tamil Nadu",
+      "objective": "Transform government schools to match private school standards with modern facilities and holistic education.",
+      "beneficiaries": "Students in selected government schools across Tamil Nadu.",
+      "eligibility": [
+        "Students enrolled in selected model/thagaisal government schools"
+      ],
+      "benefits": {
+        "type": "Modern computer labs, advanced science labs, integrated libraries, sports and extracurricular facilities, adequate teachers"
+      },
+      "coverage": "Selected government schools statewide",
+      "status": "Active",
+      "notes": "Inaugurated jointly by CM M.K. Stalin and Delhi CM Arvind Kejriwal."
+    },
+    {
+      "id": "TN-030",
+      "name": "Valar 4.0 Portal for MSMEs and Entrepreneurs",
+      "local_name": "வளர் 4.0 தொழில்முனைவோர் திட்டம்",
+      "category": "Youth & Employment",
+      "launched_date": "2023-06-01",
+      "implementing_department": "Department of Information Technology and Digital Services; Tamil Nadu e-Governance Agency (TNeGA)",
+      "objective": "Support entrepreneurs and MSMEs by enhancing capabilities, productivity, technology adoption, and idea exchange to achieve a USD 1 trillion economy target.",
+      "beneficiaries": "Entrepreneurs and MSME owners in Tamil Nadu.",
+      "eligibility": [
+        "Entrepreneurs and industries operating in Tamil Nadu",
+        "MSMEs registered under relevant government schemes"
+      ],
+      "benefits": {
+        "type": "Online support portal, issue resolution, capacity building, IIT-Madras collaboration"
+      },
+      "coverage": "Statewide",
+      "status": "Active",
+      "notes": "Developed in collaboration with IIT-Madras."
+    },
+    {
+      "id": "TN-031",
+      "name": "Free Electricity for Agriculture Scheme",
+      "local_name": "விவசாயிகளுக்கு இலவச மின்சார திட்டம்",
+      "category": "Agriculture",
+      "launched_date": "2003-01-01",
+      "implementing_department": "Agriculture Department / TANGEDCO",
+      "objective": "Provide free electricity to farmers for agricultural pump sets to reduce input costs.",
+      "beneficiaries": "Farmers with agricultural pump sets connected to the electricity grid.",
+      "eligibility": [
+        "Registered farmers in Tamil Nadu",
+        "Must have legal pump set connection for agriculture"
+      ],
+      "benefits": {
+        "type": "Free electricity for agricultural pump sets (upto specified HP)"
+      },
+      "coverage": "Statewide",
+      "status": "Active"
+    },
+    {
+      "id": "TN-032",
+      "name": "Tamil Nadu Crop Insurance Scheme",
+      "local_name": "பயிர் காப்பீடு திட்டம்",
+      "category": "Agriculture",
+      "launched_date": "2016-01-01",
+      "implementing_department": "Agriculture Department / Cooperation Department",
+      "objective": "Protect farmers from financial loss due to crop damage caused by natural calamities, pests, and diseases.",
+      "beneficiaries": "Farmers growing notified crops in Tamil Nadu.",
+      "eligibility": [
+        "Farmers (loanee and non-loanee) growing notified crops",
+        "Tamil Nadu resident",
+        "Must enroll before sowing season deadline"
+      ],
+      "benefits": {
+        "type": "Compensation for crop loss; premium subsidized by state and central government"
+      },
+      "coverage": "Statewide",
+      "status": "Active",
+      "notes": "Implemented under the Pradhan Mantri Fasal Bima Yojana framework."
+    },
+    {
+      "id": "TN-033",
+      "name": "Agricultural Input Subsidy Scheme (Seeds, Fertilizers)",
+      "local_name": "விவசாய உள்ளீடு மானியத் திட்டம்",
+      "category": "Agriculture",
+      "launched_date": "2000-01-01",
+      "implementing_department": "Agriculture Department, Government of Tamil Nadu",
+      "objective": "Reduce the financial burden on farmers by providing subsidized seeds, fertilizers, and other agricultural inputs.",
+      "beneficiaries": "Farmers in Tamil Nadu.",
+      "eligibility": [
+        "Registered farmers in Tamil Nadu",
+        "Small and marginal farmers prioritized"
+      ],
+      "benefits": {
+        "type": "Subsidized seeds, fertilizers, bio-inputs, and farm machinery"
+      },
+      "coverage": "Statewide",
+      "status": "Active"
+    },
+    {
+      "id": "TN-034",
+      "name": "Tamil Nadu Skill Development Mission (TNSDC)",
+      "local_name": "தமிழ்நாடு திறன் மேம்பாட்டு இயக்கம்",
+      "category": "Youth & Employment",
+      "launched_date": "2013-01-01",
+      "implementing_department": "Tamil Nadu Skill Development Corporation (TNSDC)",
+      "objective": "Provide skill training to youth to enhance their employability and support the growth of the skilled workforce in Tamil Nadu.",
+      "beneficiaries": "Youth aged 18–35 across Tamil Nadu.",
+      "eligibility": [
+        "Age 18–35",
+        "Tamil Nadu resident"
+      ],
+      "benefits": {
+        "type": "Free or subsidized skill training in multiple domains; placement assistance"
+      },
+      "coverage": "Statewide",
+      "status": "Active"
+    },
+    {
+      "id": "TN-035",
+      "name": "Mahalir Thittam (Women Self-Help Group Scheme)",
+      "local_name": "மகளிர் திட்டம்",
+      "category": "Women Empowerment",
+      "launched_date": "1997-01-01",
+      "implementing_department": "Tamil Nadu Corporation for Development of Women (TNCDW)",
+      "objective": "Empower rural women economically and socially through self-help groups (SHGs) by providing access to credit, training, and market linkages.",
+      "beneficiaries": "Rural women across Tamil Nadu organized into SHGs.",
+      "eligibility": [
+        "Rural women aged 18 and above",
+        "Group formation of 10–20 women",
+        "Tamil Nadu resident"
+      ],
+      "benefits": {
+        "type": "Credit linkage, revolving fund, skill training, market access, entrepreneurship support"
+      },
+      "coverage": "Statewide, especially rural areas",
+      "status": "Active",
+      "notes": "Has significantly improved livelihoods of millions of women."
+    },
+    {
+      "id": "TN-036",
+      "name": "Free Laptop / Tablet Scheme for College Students",
+      "local_name": "இலவச மடிக்கணினி திட்டம்",
+      "category": "Education",
+      "launched_date": "2011-01-01",
+      "implementing_department": "School Education / Higher Education Department",
+      "objective": "Provide free laptops or tablets to government school and college students to enhance digital literacy and learning.",
+      "beneficiaries": "Students in government colleges; government school students (Classes 6–8 for tablets).",
+      "eligibility": [
+        "Students enrolled in government-aided colleges",
+        "Students in Classes 6–8 for tablet distribution",
+        "Tamil Nadu resident"
+      ],
+      "benefits": {
+        "type": "Free laptop or tablet",
+        "latest_target": "20 lakh students to receive laptops/tablets over 2 years under 2025 announcement"
+      },
+      "coverage": "Statewide",
+      "status": "Active",
+      "notes": "2025 update: Free Laptop Scheme 2025 announced for 20 lakh students; distribution expected Feb–March 2026."
+    },
+    {
+      "id": "TN-037",
+      "name": "RTE Tamil Nadu (Right to Education – 25% Reservation)",
+      "local_name": "கல்வி உரிமைத் திட்டம்",
+      "category": "Education",
+      "launched_date": "2009-04-01",
+      "implementing_department": "School Education Department, Government of Tamil Nadu",
+      "objective": "Ensure free and compulsory education to children from weaker sections through 25% reservation in private unaided schools.",
+      "beneficiaries": "Children from economically weaker sections (EWS) and disadvantaged groups aged 6–14.",
+      "eligibility": [
+        "Children aged 6–14 years",
+        "Must belong to EWS / disadvantaged groups as per defined criteria",
+        "Tamil Nadu resident"
+      ],
+      "benefits": {
+        "type": "25% reservation in private unaided schools; free education up to Class 8"
+      },
+      "coverage": "Statewide",
+      "status": "Active",
+      "notes": "Applications via rteadmission.tnschools.gov.in."
+    },
+    {
+      "id": "TN-038",
+      "name": "Kalaignarin Kanavu Illam – Urban Housing Scheme",
+      "local_name": "நகர்ப்புற வீட்டு வசதி திட்டம்",
+      "category": "Housing",
+      "launched_date": "2021-01-01",
+      "implementing_department": "Tamil Nadu Housing Board",
+      "objective": "Provide affordable housing options to low and middle-income families in urban Tamil Nadu.",
+      "beneficiaries": "Urban poor and lower-middle-income families.",
+      "eligibility": [
+        "Urban residents of Tamil Nadu",
+        "Low to middle income group",
+        "No other pucca house in Tamil Nadu"
+      ],
+      "benefits": {
+        "type": "Subsidized housing units or financial assistance for house construction"
+      },
+      "coverage": "Major urban centres in Tamil Nadu",
+      "status": "Active"
+    },
+    {
+      "id": "TN-039",
+      "name": "Ungaludan Stalin Camp",
+      "local_name": "உங்களுடன் ஸ்டாலின் முகாம்",
+      "category": "Social Welfare / Governance",
+      "launched_date": "2021-05-01",
+      "implementing_department": "Chief Minister's Office, Government of Tamil Nadu",
+      "objective": "Bring government services directly to people and quickly resolve common problems through large-scale district camps.",
+      "beneficiaries": "All citizens of Tamil Nadu in urban and rural areas.",
+      "eligibility": [
+        "Any resident of Tamil Nadu"
+      ],
+      "benefits": {
+        "type": "On-the-spot resolution of grievances, distribution of scheme benefits, multi-department services",
+        "2025_target": "10,000 camps across the state in 2025"
+      },
+      "coverage": "Statewide – both rural and urban",
+      "status": "Active"
+    },
+    {
+      "id": "TN-040",
+      "name": "Chief Minister's Kakkum Karangal for Ex-Servicemen",
+      "local_name": "முதல்வரின் காக்கும் கரங்கள் திட்டம்",
+      "category": "Ex-Servicemen",
+      "launched_date": "2025-07-21",
+      "implementing_department": "Ex-Servicemen Welfare Department / Chief Minister's Office",
+      "objective": "Help retired defence personnel set up their own businesses through loans and financial assistance.",
+      "beneficiaries": "Ex-servicemen and their families in Tamil Nadu.",
+      "eligibility": [
+        "Retired defence personnel residing in Tamil Nadu",
+        "Family members of ex-servicemen"
+      ],
+      "benefits": {
+        "type": "Subsidized loans and financial assistance for entrepreneurship and self-employment"
+      },
+      "coverage": "Statewide",
+      "status": "Active"
+    },
+    {
+      "id": "TN-041",
+      "name": "MGNREGA Tamil Nadu (Mahatma Gandhi National Rural Employment Guarantee Act)",
+      "local_name": "தேசிய கிராமப்புற வேலை உத்தரவாதத் திட்டம்",
+      "category": "Agriculture / Social Welfare",
+      "launched_date": "2006-02-02",
+      "implementing_department": "Rural Development and Panchayat Raj Department",
+      "objective": "Guarantee 100 days of wage employment per year to rural households whose adult members are willing to do unskilled manual work.",
+      "beneficiaries": "Rural households in Tamil Nadu.",
+      "eligibility": [
+        "Rural household in Tamil Nadu",
+        "Must hold a Job Card (MGNREGA Job Card)",
+        "Adult member willing to do unskilled manual work"
+      ],
+      "benefits": {
+        "days_per_year": 100,
+        "wage_rate_per_day_inr": 294,
+        "mode": "DBT"
+      },
+      "coverage": "All rural areas of Tamil Nadu",
+      "status": "Active",
+      "notes": "Job Card List 2025-26 released; check at nrega.nic.in."
+    },
+    {
+      "id": "TN-042",
+      "name": "Aavin Milk Subsidy Card Scheme",
+      "local_name": "ஆவின் பால் அட்டை திட்டம்",
+      "category": "Social Welfare",
+      "launched_date": "1958-01-01",
+      "implementing_department": "Tamil Nadu Cooperative Milk Producers Federation Limited (TCMPF – Aavin)",
+      "objective": "Provide subsidized milk to families across Tamil Nadu to improve nutrition.",
+      "beneficiaries": "Families registered with the Aavin milk card scheme.",
+      "eligibility": [
+        "Any resident of Tamil Nadu",
+        "Can register online at aavin.tn.gov.in from January 2023"
+      ],
+      "benefits": {
+        "type": "Subsidized or free milk supply through Aavin network"
+      },
+      "coverage": "Statewide",
+      "status": "Active"
+    },
+    {
+      "id": "TN-043",
+      "name": "Inter-Caste Marriage Assistance Scheme",
+      "local_name": "சாதிகளுக்கிடையேயான திருமண உதவி திட்டம்",
+      "category": "Social Welfare",
+      "launched_date": "1974-01-01",
+      "implementing_department": "Social Welfare and Nutritious Meal Programme Department",
+      "objective": "Promote social harmony by providing financial incentives to inter-caste married couples.",
+      "beneficiaries": "Couples where one partner belongs to SC/ST category and the other to a different caste.",
+      "eligibility": [
+        "One partner from SC/ST community",
+        "First marriage for both",
+        "Application within one year of marriage",
+        "Tamil Nadu resident"
+      ],
+      "benefits": {
+        "assistance_amount_inr": 50000,
+        "type": "One-time cash grant"
+      },
+      "coverage": "Statewide",
+      "status": "Active"
+    },
+    {
+      "id": "TN-044",
+      "name": "Tamil Nadu Backward Classes Higher Education Loan Scheme",
+      "local_name": "பிற்படுத்தப்பட்டோர் உயர்கல்வி கடன் திட்டம்",
+      "category": "Education",
+      "launched_date": "1990-01-01",
+      "implementing_department": "Backward Classes, Most Backward Classes and Minorities Welfare Department",
+      "objective": "Enable students from backward classes to access higher education through subsidized loans.",
+      "beneficiaries": "Students from BC/MBC/Minority communities pursuing higher education.",
+      "eligibility": [
+        "Belongs to BC/MBC/Minority category",
+        "Admitted to recognized institution for higher education",
+        "Tamil Nadu resident"
+      ],
+      "benefits": {
+        "loan_amount_inr": "Upto ₹7.5 lakh or higher",
+        "type": "Low-interest or subsidized education loan"
+      },
+      "coverage": "Statewide",
+      "status": "Active"
+    },
+    {
+      "id": "TN-045",
+      "name": "Tamil Nadu Noon Meal Scheme (Midday Meal Programme)",
+      "local_name": "நண்பகல் உணவு திட்டம்",
+      "category": "Education / Social Welfare",
+      "launched_date": "1982-07-01",
+      "implementing_department": "School Education Department / Social Welfare Department",
+      "objective": "Provide free nutritious midday meals to school students to improve enrollment, attendance, and nutrition.",
+      "beneficiaries": "Students in Classes 1 to 12 in government and government-aided schools.",
+      "eligibility": [
+        "Enrolled in government or government-aided school in Tamil Nadu"
+      ],
+      "benefits": {
+        "type": "Free midday meal on all school days",
+        "mode": "In-kind at school"
+      },
+      "coverage": "Statewide – all government schools",
+      "status": "Active",
+      "notes": "Pioneer scheme introduced by Chief Minister M.G. Ramachandran (MGR) in 1982."
+    },
+    {
+      "id": "TN-046",
+      "name": "Adi Dravidar Welfare Scholarships",
+      "local_name": "ஆதி திராவிட நலன் உதவித்தொகை திட்டம்",
+      "category": "Education / Social Welfare",
+      "launched_date": "1970-01-01",
+      "implementing_department": "Adi Dravidar and Tribal Welfare Department",
+      "objective": "Support education of students from Scheduled Caste (SC) communities through scholarships and other assistance.",
+      "beneficiaries": "Students from Scheduled Caste communities in Tamil Nadu.",
+      "eligibility": [
+        "Belongs to SC community in Tamil Nadu",
+        "Enrolled in school or college",
+        "Income below prescribed limit"
+      ],
+      "benefits": {
+        "type": "Pre-matric and post-matric scholarships, free hostel facilities, free coaching"
+      },
+      "coverage": "Statewide",
+      "status": "Active"
+    },
+    {
+      "id": "TN-047",
+      "name": "Kalaignarin Kanavu Illam – Slum Clearance and Resettlement",
+      "local_name": "குடிசை நீக்கம் மற்றும் மறுவாழ்வு திட்டம்",
+      "category": "Housing",
+      "launched_date": "2001-01-01",
+      "implementing_department": "Tamil Nadu Slum Clearance Board",
+      "objective": "Resettle slum dwellers into permanent housing colonies with basic amenities.",
+      "beneficiaries": "Slum dwellers in urban Tamil Nadu.",
+      "eligibility": [
+        "Residing in notified slum area",
+        "Urban resident of Tamil Nadu"
+      ],
+      "benefits": {
+        "type": "Permanent tenement with water supply, sanitation, and electricity"
+      },
+      "coverage": "Urban areas statewide",
+      "status": "Active"
+    },
+    {
+      "id": "TN-048",
+      "name": "Full-Time Ph.D Scholar Incentive Scheme",
+      "local_name": "முழுநேர முனைவர் பட்ட ஆய்வாளர் ஊக்கத் திட்டம்",
+      "category": "Education",
+      "launched_date": "2022-01-01",
+      "implementing_department": "Higher Education Department, Government of Tamil Nadu",
+      "objective": "Encourage research by providing financial incentives to full-time Ph.D scholars in Tamil Nadu universities.",
+      "beneficiaries": "Full-time Ph.D scholars in Tamil Nadu state universities.",
+      "eligibility": [
+        "Full-time Ph.D registration in a Tamil Nadu state university",
+        "Fresh application for 2024-25 released"
+      ],
+      "benefits": {
+        "type": "Monthly research fellowship/incentive",
+        "application_portal": "tn.gov.in"
+      },
+      "coverage": "Tamil Nadu state universities",
+      "status": "Active"
+    },
+    {
+      "id": "TN-049",
+      "name": "Tamil Nadu Public Distribution System (PDS) – Free Rice Scheme",
+      "local_name": "இலவச அரிசி விநியோகத் திட்டம்",
+      "category": "Social Welfare",
+      "launched_date": "1982-01-01",
+      "implementing_department": "Civil Supplies and Consumer Protection Department",
+      "objective": "Ensure food security for BPL and priority households by providing free rice through ration shops.",
+      "beneficiaries": "Priority Household (PHH) and Antyodaya Anna Yojana (AAY) cardholders in Tamil Nadu.",
+      "eligibility": [
+        "Holds a valid ration card (PHH or AAY)",
+        "Tamil Nadu resident"
+      ],
+      "benefits": {
+        "rice_kg_per_unit": 5,
+        "type": "Free rice per family unit per month"
+      },
+      "coverage": "Statewide through Fair Price Shops",
+      "status": "Active"
+    },
+    {
+      "id": "TN-050",
+      "name": "Education Loan Scheme for College Students (Budget 2024-25)",
+      "local_name": "மாணவர்களுக்கு கல்விக் கடன் திட்டம்",
+      "category": "Education",
+      "launched_date": "2024-02-19",
+      "implementing_department": "Higher Education Department / Banks",
+      "objective": "Ensure adequate credit availability for college students pursuing higher education by facilitating bank education loans.",
+      "beneficiaries": "College students in Tamil Nadu.",
+      "eligibility": [
+        "Enrolled in a recognized college in Tamil Nadu",
+        "Tamil Nadu resident"
+      ],
+      "benefits": {
+        "target_disbursement_crore_inr": 2500,
+        "target_beneficiaries": "1 lakh students in 2024-25"
+      },
+      "coverage": "Statewide",
+      "status": "Active",
+      "notes": "Announced in Tamil Nadu Budget 2024-25; disbursed through banks."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# Environments
+.env
+venv/
+env/
+__pycache__/
+
+# Logs and Data
+*.log
+*.sqlite3
+
+# OS generated files
+.DS_Store
+Thumbs.db

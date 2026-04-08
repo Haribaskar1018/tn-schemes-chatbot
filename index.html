@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>தமிழ்நாடு அரசு திட்டங்கள் | TN Government Schemes Assistant</title>
+    <meta name="description" content="Tamil Nadu Government Schemes AI Assistant – Get instant help on 50+ welfare schemes in Tamil. கலைஞர் மகளிர் உரிமை, புதுமை பெண், நலம் காக்கும் மற்றும் பல திட்டங்கள்.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@300;400;600;700;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- ANIMATED PARTICLE CANVAS (behind everything) -->
+    <!-- ═══════════════════════════════════════════ -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- NAVIGATION BAR -->
+    <!-- ═══════════════════════════════════════════ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#" class="nav-brand">
+                <!-- Tamil Nadu Emblem SVG (simplified) -->
+                <svg class="emblem-icon" viewBox="0 0 100 100" width="36" height="36">
+                    <circle cx="50" cy="50" r="48" fill="none" stroke="var(--accent-color)" stroke-width="2"/>
+                    <text x="50" y="58" text-anchor="middle" font-size="36" fill="var(--accent-color)" font-weight="700">த</text>
+                </svg>
+                <div>
+                    <span class="brand-tamil">தமிழ்நாடு திட்டங்கள்</span>
+                    <span class="brand-en">TN Schemes Hub</span>
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="#categories">திட்டங்கள்</a>
+                <a href="#stats">புள்ளிவிவரம்</a>
+                <a href="#how-it-works">எப்படி</a>
+                <button class="lang-toggle" id="lang-toggle" onclick="toggleLanguage()">
+                    <i class="fa-solid fa-language"></i> EN / தமிழ்
+                </button>
+            </div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- HERO SECTION -->
+    <!-- ═══════════════════════════════════════════ -->
+    <header class="hero" id="hero">
+        <!-- Gopuram SVG Silhouette -->
+        <div class="gopuram-silhouette">
+            <svg viewBox="0 0 1440 400" preserveAspectRatio="none">
+                <!-- Temple tower silhouette -->
+                <path d="M680,400 L680,180 L700,160 L700,120 L710,100 L710,60 L720,40 L720,20 L718,10 L722,10 L720,20 L720,40 L730,60 L730,100 L740,120 L740,160 L760,180 L760,400Z" fill="rgba(221,161,94,0.08)"/>
+                <!-- Left smaller tower -->
+                <path d="M580,400 L580,250 L595,230 L595,210 L605,190 L605,400Z" fill="rgba(221,161,94,0.05)"/>
+                <!-- Right smaller tower -->
+                <path d="M835,400 L835,250 L850,230 L850,210 L840,190 L840,400Z" fill="rgba(221,161,94,0.05)"/>
+                <!-- Base wall -->
+                <path d="M500,400 L500,320 Q720,280 940,320 L940,400Z" fill="rgba(221,161,94,0.04)"/>
+            </svg>
+        </div>
+
+        <!-- Floating cultural decorations -->
+        <div class="floating-decor decor-1"><i class="fa-solid fa-om"></i></div>
+        <div class="floating-decor decor-2">☸</div>
+        <div class="floating-decor decor-3">🪷</div>
+        <div class="floating-decor decor-4"><i class="fa-solid fa-dharmachakra"></i></div>
+
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Official AI Assistant</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-tamil">தமிழ்நாடு அரசு</span>
+                <span class="title-gold">திட்டங்கள் உதவியாளர்</span>
+            </h1>
+            <p class="hero-desc">
+                50+ அரசு திட்டங்கள் பற்றிய தகவல்களை எளிய தமிழில் பெறுங்கள்.
+                <br>Get instant help on 50+ government welfare schemes.
+            </p>
+            <div class="hero-actions">
+                <button class="btn-primary" onclick="toggleChat()">
+                    <i class="fa-solid fa-comments"></i> திட்ட உதவி பெறுங்கள்
+                </button>
+                <a href="#categories" class="btn-outline">
+                    <i class="fa-solid fa-grid-2"></i> திட்டங்களை பார்க்க
+                </a>
+            </div>
+        </div>
+
+        <!-- Stats Counter Row -->
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-number" data-target="50">0</span><span class="stat-plus">+</span>
+                <span class="stat-label">திட்டங்கள்</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="11">0</span>
+                <span class="stat-label">வகைகள்</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="24">0</span><span class="stat-plus">/7</span>
+                <span class="stat-label">AI உதவி</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Kolam Divider -->
+    <div class="kolam-divider">
+        <svg viewBox="0 0 1200 30" preserveAspectRatio="none">
+            <path d="M0,15 Q30,0 60,15 T120,15 T180,15 T240,15 T300,15 T360,15 T420,15 T480,15 T540,15 T600,15 T660,15 T720,15 T780,15 T840,15 T900,15 T960,15 T1020,15 T1080,15 T1140,15 T1200,15" 
+                  fill="none" stroke="var(--accent-color)" stroke-width="1.5" opacity="0.4"/>
+            <circle cx="600" cy="15" r="5" fill="var(--accent-color)" opacity="0.6"/>
+            <circle cx="540" cy="15" r="3" fill="var(--accent-color)" opacity="0.4"/>
+            <circle cx="660" cy="15" r="3" fill="var(--accent-color)" opacity="0.4"/>
+        </svg>
+    </div>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- CATEGORY CARDS SECTION -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="section" id="categories">
+        <div class="section-header">
+            <span class="section-tag"><i class="fa-solid fa-grid-2"></i> திட்ட வகைகள்</span>
+            <h2>அரசு திட்டங்கள் வகைகள்</h2>
+            <p>Government Scheme Categories — Click any category to ask about it</p>
+        </div>
+
+        <div class="cards-grid">
+            <!-- Women Empowerment -->
+            <div class="card" data-category="women" onclick="autoPrompt('மகளிர் நலன் மற்றும் அதிகாரமளிப்பு தொடர்பான அனைத்து திட்டங்கள் பற்றி விளக்குங்கள்')">
+                <div class="card-glow"></div>
+                <div class="card-icon-wrap women"><i class="fa-solid fa-person-dress"></i></div>
+                <h3>மகளிர் நலன்</h3>
+                <p>Women Empowerment</p>
+                <span class="card-count">5 திட்டங்கள்</span>
+            </div>
+
+            <!-- Education -->
+            <div class="card" data-category="education" onclick="autoPrompt('தமிழ்நாட்டில் உள்ள அனைத்து கல்வி திட்டங்கள் என்னென்ன?')">
+                <div class="card-glow"></div>
+                <div class="card-icon-wrap education"><i class="fa-solid fa-graduation-cap"></i></div>
+                <h3>கல்வி</h3>
+                <p>Education & Scholarships</p>
+                <span class="card-count">7 திட்டங்கள்</span>
+            </div>
+
+            <!-- Health -->
+            <div class="card" data-category="health" onclick="autoPrompt('சுகாதாரம் மற்றும் மருத்துவ காப்பீட்டு திட்டங்கள் பற்றி சொல்லுங்கள்')">
+                <div class="card-glow"></div>
+                <div class="card-icon-wrap health"><i class="fa-solid fa-heart-pulse"></i></div>
+                <h3>சுகாதாரம்</h3>
+                <p>Health & Insurance</p>
+                <span class="card-count">4 திட்டங்கள்</span>
+            </div>
+
+            <!-- Agriculture -->
+            <div class="card" data-category="agriculture" onclick="autoPrompt('விவசாயிகளுக்கான அனைத்து திட்டங்கள் மற்றும் மானியங்கள் என்ன?')">
+                <div class="card-glow"></div>
+                <div class="card-icon-wrap agriculture"><i class="fa-solid fa-wheat-awn"></i></div>
+                <h3>விவசாயம்</h3>
+                <p>Agriculture & Farming</p>
+                <span class="card-count">3 திட்டங்கள்</span>
+            </div>
+
+            <!-- Social Welfare -->
+            <div class="card" data-category="social" onclick="autoPrompt('சமூக நலன் மற்றும் ஓய்வூதிய திட்டங்கள் என்னென்ன?')">
+                <div class="card-glow"></div>
+                <div class="card-icon-wrap social"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                <h3>சமூக நலன்</h3>
+                <p>Social Welfare</p>
+                <span class="card-count">5 திட்டங்கள்</span>
+            </div>
+
+            <!-- Housing -->
+            <div class="card" data-category="housing" onclick="autoPrompt('வீட்டு வசதி திட்டங்கள் பற்றி விளக்குங்கள்')">
+                <div class="card-glow"></div>
+                <div class="card-icon-wrap housing"><i class="fa-solid fa-house-chimney"></i></div>
+                <h3>வீட்டு வசதி</h3>
+                <p>Housing Schemes</p>
+                <span class="card-count">2 திட்டங்கள்</span>
+            </div>
+
+            <!-- Environment -->
+            <div class="card" data-category="environment" onclick="autoPrompt('சுற்றுச்சூழல் பாதுகாப்பு திட்டங்கள் என்ன?')">
+                <div class="card-glow"></div>
+                <div class="card-icon-wrap environment"><i class="fa-solid fa-tree"></i></div>
+                <h3>சுற்றுச்சூழல்</h3>
+                <p>Environment</p>
+                <span class="card-count">2 திட்டங்கள்</span>
+            </div>
+
+            <!-- Youth & Employment -->
+            <div class="card" data-category="youth" onclick="autoPrompt('இளைஞர்களுக்கான வேலை மற்றும் திறன் வளர்ச்சி திட்டங்கள் என்ன?')">
+                <div class="card-glow"></div>
+                <div class="card-icon-wrap youth"><i class="fa-solid fa-briefcase"></i></div>
+                <h3>இளைஞர் & வேலை</h3>
+                <p>Youth & Employment</p>
+                <span class="card-count">6 திட்டங்கள்</span>
+            </div>
+
+            <!-- Tribal Welfare -->
+            <div class="card" data-category="tribal" onclick="autoPrompt('பழங்குடியினர் நலத்திட்டங்கள் பற்றி சொல்லுங்கள்')">
+                <div class="card-glow"></div>
+                <div class="card-icon-wrap tribal"><i class="fa-solid fa-mountain-sun"></i></div>
+                <h3>பழங்குடி நலன்</h3>
+                <p>Tribal Welfare</p>
+                <span class="card-count">1 திட்டம்</span>
+            </div>
+
+            <!-- Child Welfare -->
+            <div class="card" data-category="child" onclick="autoPrompt('குழந்தை நலன் மற்றும் பாதுகாப்பு திட்டங்கள் என்ன?')">
+                <div class="card-glow"></div>
+                <div class="card-icon-wrap child"><i class="fa-solid fa-children"></i></div>
+                <h3>குழந்தை நலன்</h3>
+                <p>Child Welfare</p>
+                <span class="card-count">3 திட்டங்கள்</span>
+            </div>
+
+            <!-- Ex-Servicemen -->
+            <div class="card" data-category="exservice" onclick="autoPrompt('முன்னாள் ராணுவத்தினருக்கான திட்டங்கள் என்ன?')">
+                <div class="card-glow"></div>
+                <div class="card-icon-wrap exservice"><i class="fa-solid fa-shield"></i></div>
+                <h3>முன்னாள் ராணுவம்</h3>
+                <p>Ex-Servicemen</p>
+                <span class="card-count">1 திட்டம்</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kolam Divider -->
+    <div class="kolam-divider">
+        <svg viewBox="0 0 1200 30" preserveAspectRatio="none">
+            <path d="M0,15 Q30,0 60,15 T120,15 T180,15 T240,15 T300,15 T360,15 T420,15 T480,15 T540,15 T600,15" fill="none" stroke="var(--primary-color)" stroke-width="1.5" opacity="0.3"/>
+            <path d="M600,15 Q630,0 660,15 T720,15 T780,15 T840,15 T900,15 T960,15 T1020,15 T1080,15 T1140,15 T1200,15" fill="none" stroke="var(--primary-color)" stroke-width="1.5" opacity="0.3"/>
+            <circle cx="600" cy="15" r="6" fill="var(--primary-color)" opacity="0.3"/>
+        </svg>
+    </div>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- HOW IT WORKS -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="section section-dark" id="how-it-works">
+        <div class="section-header light">
+            <span class="section-tag"><i class="fa-solid fa-circle-question"></i> எப்படி பயன்படுத்துவது?</span>
+            <h2>மூன்று எளிய படிகள்</h2>
+            <p>Three simple steps to get scheme information</p>
+        </div>
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <div class="step-icon"><i class="fa-solid fa-message"></i></div>
+                <h3>கேள்வி கேளுங்கள்</h3>
+                <p>Type your question in Tamil or English about any government scheme.</p>
+            </div>
+            <div class="step-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <div class="step-icon"><i class="fa-solid fa-robot"></i></div>
+                <h3>AI பதில் பெறுங்கள்</h3>
+                <p>Our AI assistant will instantly find the right scheme information for you.</p>
+            </div>
+            <div class="step-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <div class="step-icon"><i class="fa-solid fa-clipboard-check"></i></div>
+                <h3>விண்ணப்பியுங்கள்</h3>
+                <p>Get eligibility, benefits, and application steps — all in easy Tamil.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- POPULAR SCHEMES MARQUEE -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="marquee-section">
+        <div class="marquee-track">
+            <div class="marquee-content">
+                <span class="marquee-item" onclick="autoPrompt('கலைஞர் மகளிர் உரிமை திட்டம் என்றால் என்ன?')">🏆 கலைஞர் மகளிர் உரிமை</span>
+                <span class="marquee-item" onclick="autoPrompt('புதுமை பெண் திட்டம் பற்றி கூறுங்கள்')">📚 புதுமை பெண்</span>
+                <span class="marquee-item" onclick="autoPrompt('நான் முதல்வன் திட்டம் பற்றி விளக்குங்கள்')">💼 நான் முதல்வன்</span>
+                <span class="marquee-item" onclick="autoPrompt('முதலமைச்சர் காலை உணவு திட்டம் என்ன?')">🍽️ காலை உணவு திட்டம்</span>
+                <span class="marquee-item" onclick="autoPrompt('நலம் காக்கும் திட்டம் பற்றி சொல்லுங்கள்')">🏥 நலம் காக்கும்</span>
+                <span class="marquee-item" onclick="autoPrompt('கலைஞரின் கனவு இல்லம் திட்டம் பற்றி சொல்லுங்கள்')">🏠 கனவு இல்லம்</span>
+                <span class="marquee-item" onclick="autoPrompt('பசுமை தமிழ்நாடு இயக்கம் பற்றி சொல்லுங்கள்')">🌳 பசுமை தமிழ்நாடு</span>
+                <span class="marquee-item" onclick="autoPrompt('வெற்றி நிச்சயம் திட்டம் பற்றி சொல்லுங்கள்')">🎯 வெற்றி நிச்சயம்</span>
+                <!-- Duplicate for seamless loop -->
+                <span class="marquee-item" onclick="autoPrompt('கலைஞர் மகளிர் உரிமை திட்டம் என்றால் என்ன?')">🏆 கலைஞர் மகளிர் உரிமை</span>
+                <span class="marquee-item" onclick="autoPrompt('புதுமை பெண் திட்டம் பற்றி கூறுங்கள்')">📚 புதுமை பெண்</span>
+                <span class="marquee-item" onclick="autoPrompt('நான் முதல்வன் திட்டம் பற்றி விளக்குங்கள்')">💼 நான் முதல்வன்</span>
+                <span class="marquee-item" onclick="autoPrompt('முதலமைச்சர் காலை உணவு திட்டம் என்ன?')">🍽️ காலை உணவு திட்டம்</span>
+                <span class="marquee-item" onclick="autoPrompt('நலம் காக்கும் திட்டம் பற்றி சொல்லுங்கள்')">🏥 நலம் காக்கும்</span>
+                <span class="marquee-item" onclick="autoPrompt('கலைஞரின் கனவு இல்லம் திட்டம் பற்றி சொல்லுங்கள்')">🏠 கனவு இல்லம்</span>
+                <span class="marquee-item" onclick="autoPrompt('பசுமை தமிழ்நாடு இயக்கம் பற்றி சொல்லுங்கள்')">🌳 பசுமை தமிழ்நாடு</span>
+                <span class="marquee-item" onclick="autoPrompt('வெற்றி நிச்சயம் திட்டம் பற்றி சொல்லுங்கள்')">🎯 வெற்றி நிச்சயம்</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- FOOTER -->
+    <!-- ═══════════════════════════════════════════ -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <h3>தமிழ்நாடு அரசு திட்டங்கள்</h3>
+                <p>AI-Powered Government Schemes Assistant</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://tn.gov.in" target="_blank">tn.gov.in</a>
+                <a href="#categories">திட்ட வகைகள்</a>
+                <a href="#how-it-works">உதவி</a>
+            </div>
+            <p class="footer-copy">© 2026 TN Schemes Hub. Built with AI for the people of Tamil Nadu.</p>
+        </div>
+    </footer>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- FLOATING CHATBOT TOGGLE -->
+    <!-- ═══════════════════════════════════════════ -->
+    <div class="chat-toggle" id="chat-toggle" onclick="toggleChat()">
+        <div class="chat-toggle-pulse"></div>
+        <i class="fa-solid fa-robot"></i>
+    </div>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- CHATBOT WINDOW -->
+    <!-- ═══════════════════════════════════════════ -->
+    <div class="chat-window" id="chat-window">
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <div class="chat-avatar">
+                    <i class="fa-solid fa-robot"></i>
+                    <span class="online-dot"></span>
+                </div>
+                <div>
+                    <h4>திட்டங்கள் உதவியாளர்</h4>
+                    <small><span class="status-dot"></span> Online • AI Powered</small>
+                </div>
+            </div>
+            <div class="chat-header-actions">
+                <button class="header-btn" onclick="clearChat()" title="Clear chat"><i class="fa-solid fa-trash-can"></i></button>
+                <button class="header-btn close-btn" onclick="toggleChat()" title="Close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+
+        <div class="chat-body" id="chat-body">
+            <div class="message bot">
+                <div class="bot-avatar-small"><i class="fa-solid fa-robot"></i></div>
+                <div class="msg-bubble">
+                    வணக்கம்! 🙏 நான் தமிழ்நாடு அரசு திட்டங்கள் உதவியாளர்.
+                    <br><br>உங்களுக்கு எந்த திட்டம் பற்றி தகவல் வேண்டும்? கீழே உள்ள பொத்தான்களை அழுத்தவும் அல்லது கேள்வி தட்டச்சு செய்யவும்.
+                </div>
+            </div>
+            <!-- Quick Action Chips -->
+            <div class="quick-chips">
+                <button class="chip" onclick="autoPrompt('கலைஞர் மகளிர் உரிமை திட்டம் என்றால் என்ன?')">🏆 மகளிர் உரிமை</button>
+                <button class="chip" onclick="autoPrompt('புதுமை பெண் திட்டம் பற்றி சொல்லுங்கள்')">📚 புதுமை பெண்</button>
+                <button class="chip" onclick="autoPrompt('நான் முதல்வன் திட்டம் பற்றி விளக்குங்கள்')">💼 நான் முதல்வன்</button>
+                <button class="chip" onclick="autoPrompt('எனக்கு என்ன திட்டங்கள் கிடைக்கும்?')">❓ எனக்கான திட்டங்கள்</button>
+            </div>
+        </div>
+
+        <div class="chat-footer">
+            <input type="text" id="chat-input" placeholder="உங்கள் கேள்வியை இங்கே தட்டச்சு செய்யவும்..." onkeypress="handleKeyPress(event)">
+            <button class="send-btn" id="send-btn" onclick="sendMessage()">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
