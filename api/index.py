@@ -1,18 +1,22 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from google import genai
 import json
 import os
+import sys
+import traceback
 from dotenv import load_dotenv
+
+global_import_error = None
+try:
+    from google import genai
+except Exception as e:
+    genai = None
+    global_import_error = f"Global Import Error: {str(e)}\n{traceback.format_exc()}"
 
 load_dotenv()
 
 app = FastAPI()
-
-@app.get("/")
-def read_root():
-    return {"message": "FastAPI is running! However, Vercel is routing all traffic here instead of your index.html."}
 
 app.add_middleware(
     CORSMiddleware,
@@ -70,6 +74,8 @@ class ChatRequest(BaseModel):
 
 @app.post("/api/chat")
 def chat_with_bot(req: ChatRequest):
+    if global_import_error:
+        return {"error": global_import_error}
     if not client:
         return {"error": "API Key not configured properly. The administrator needs to set GEMINI_API_KEY."}
     try:
@@ -84,3 +90,9 @@ def chat_with_bot(req: ChatRequest):
         return {"response": response.text}
     except Exception as e:
         return {"error": repr(e)}
+
+@app.get("/")
+def read_root():
+    if global_import_error:
+        return {"message": "FastAPI started, but imports failed. Check the error detail.", "error": global_import_error}
+    return {"message": "FastAPI is running! However, Vercel is routing all traffic here instead of your index.html."}
