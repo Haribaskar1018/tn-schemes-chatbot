@@ -10,6 +10,10 @@ load_dotenv()
 
 app = FastAPI()
 
+@app.get("/")
+def read_root():
+    return {"message": "FastAPI is running! However, Vercel is routing all traffic here instead of your index.html."}
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
