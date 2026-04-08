@@ -2,7 +2,6 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from google import genai
-from google.genai import types
 import json
 import os
 from dotenv import load_dotenv
@@ -22,7 +21,7 @@ app.add_middleware(
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 try:
-    if GEMINI_API_KEY and GEMINI_API_KEY != "YOUR_NEW_VALID_API_KEY_HERE":
+    if GEMINI_API_KEY and GEMINI_API_KEY != "YOUR_GEMINI_API_KEY_HERE":
         client = genai.Client(api_key=GEMINI_API_KEY)
     else:
         client = None
@@ -31,12 +30,15 @@ except Exception as e:
     client = None
     print(f"Error initializing client: {e}")
 
-# Load the JSON kb
+# Load the JSON kb resiliently (handling Vercel's relative paths)
+base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+data_path = os.path.join(base_dir, "data", "tamil_nadu_government_schemes.json")
+
 try:
-    with open("data/tamil_nadu_government_schemes.json", "r", encoding="utf-8") as f:
+    with open(data_path, "r", encoding="utf-8") as f:
         kb = f.read()
 except Exception as e:
-    print(f"Error loading schemes data: {e}")
+    print(f"Error loading schemes data at {data_path}: {e}")
     kb = "{}"
 
 prompt = f"""
@@ -62,13 +64,11 @@ prompt = f"""
 class ChatRequest(BaseModel):
     message: str
 
-@app.post("/chat")
+@app.post("/api/chat")
 def chat_with_bot(req: ChatRequest):
     if not client:
-        return {"error": "API Key not configured properly in .env"}
+        return {"error": "API Key not configured properly. The administrator needs to set GEMINI_API_KEY."}
     try:
-        # Note: types.GenerateContentConfig might not be directly available like this based on exact version,
-        # but using dict for config is fine based on the user's snippet. Let's use the user's exact format.
         chat = client.chats.create(
             model='gemini-2.5-flash',
             config={
@@ -80,7 +80,3 @@ def chat_with_bot(req: ChatRequest):
         return {"response": response.text}
     except Exception as e:
         return {"error": repr(e)}
-
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
